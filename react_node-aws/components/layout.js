@@ -1,4 +1,4 @@
-const Layout = ()=>{
+const Layout = ({children})=>{
     const nav = ()=>(
 <ul className="nav">
     <li className="nav-item">
@@ -15,7 +15,8 @@ const Layout = ()=>{
 </ul>
     );
       
-return <React.Fragment>{nav()}</React.Fragment>;
+return <React.Fragment>{nav()} {children}
+</React.Fragment>;
 
 };
 
