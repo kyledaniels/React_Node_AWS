@@ -13,17 +13,17 @@ const Layout = ({children})=>{
     );
 
     const nav = ()=>(
-<ul className="nav">
+<ul className="nav nav-tabs bg-warning">
     <li className="nav-item">
-        <a className="nav-link" href="">Home</a>
+        <a className="nav-link text-dark" href="">Home</a>
     </li>
 
     <li className="nav-item">
-        <a className="nav-link" href="">Login</a>
+        <a className="nav-link text-dark" href="">Login</a>
     </li>
 
     <li className="nav-item">
-        <a className="nav-link" href="">Register</a>
+        <a className="nav-link text-dark" href="">Register</a>
     </li>
 </ul>
     );
@@ -31,7 +31,7 @@ const Layout = ({children})=>{
 return (
 
 <React.Fragment>
-  {head()} {nav()} {children}
+  {head()} {nav()} <div className="container pt-5 pb-5">{children}</div>
 </React.Fragment>
 
     );  
