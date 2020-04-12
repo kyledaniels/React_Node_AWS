@@ -13,28 +13,27 @@ const Layout = ({children})=>{
         />
     );
 
-    const nav = ()=>(
-<ul className="nav nav-tabs bg-warning">
-    <li className="nav-item">
-    <Link href="/">
-    <a className="nav-link text-dark">Home</a>
-    </Link>
+        const nav = ()=>(
+    <ul className="nav nav-tabs bg-warning">
+
+        <li className="nav-item">
+        <Link href="/">
         <a className="nav-link text-dark">Home</a>
-    </li>
+        </Link>
+        </li>
 
-    <li className="nav-item">
-    <Link href="/login">
-    <a className="nav-link text-dark">Login</a>
-    </Link> 
-      
-    </li>
+        <li className="nav-item">
+        <Link href="/login">
+        <a className="nav-link text-dark">Login</a>
+        </Link> 
+        </li>
 
-    <li className="nav-item">
-    <Link href="/register">
-    <a className="nav-link text-dark">Register</a>
-    </Link>
-    </li>
-</ul>
+        <li className="nav-item">
+        <Link href="/register">
+        <a className="nav-link text-dark">Register</a>
+        </Link>
+        </li>
+    </ul>
     );
       
 return (
