@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Router from 'next/router'
+import NProgress from 'nprogress'
+
+
 
 const Layout = ({children})=>{
 
