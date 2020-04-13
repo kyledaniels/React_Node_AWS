@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 
-Router.onRouteChangeStart= url=>NProgress.start()
-Router.onRouteChangeComplete= url=>NProgress.done()
-Router.onRouteChangeError= url=>NProgress.done()
+Router.onRouteChangeStart= url=> NProgress.start()
+Router.onRouteChangeComplete= url=> NProgress.done()
+Router.onRouteChangeError= url=> NProgress.done()
 
 
 
