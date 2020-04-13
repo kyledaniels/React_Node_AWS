@@ -3,18 +3,30 @@ import Link from 'next/link'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 
+Router.routeChangeStart= url=>NProgress.start()
+Router.routeChangeComplete= url=>NProgress.done()
+Router.routeChangeError= url=>NProgress.done()
+
 
 
 const Layout = ({children})=>{
 
     const head =()=>(
-        <link 
-        
+
+        <React.Fragment><link 
         rel="stylesheet" 
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous"
         />
+        
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        />
+
+        </React.Fragment>
+        
     );
 
         const nav = ()=>(
