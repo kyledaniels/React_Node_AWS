@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Router from 'next/router'
 import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 
 Router.onRouteChangeStart= url=> NProgress.start()
@@ -21,7 +22,7 @@ const Layout = ({children})=>{
         
         <link 
         rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"/>
+        href="/static/css/styles.css"/>
         </React.Fragment>
         
     );
