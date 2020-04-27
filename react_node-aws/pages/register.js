@@ -24,20 +24,21 @@ const Register = () => {
 
        }
 
-       const registerform=()=><form onSubmit={handleSubmit}>
+       const registerform=()=>(
+       <form onSubmit={handleSubmit}>
            <div className= "form-group">
-               <input onChange={handleChange('name')} type="text" className="form-control" placeholder="Type your name"/>
+               <input value={name} onChange={handleChange('name')} type="text" className="form-control" placeholder="Type your name"/>
            </div>
            <div className= "form-group">
-               <input onChange={handleChange('email')}type="email" className="form-control" placeholder="Type your email"/>
+               <input value={email}onChange={handleChange('email')}type="email" className="form-control" placeholder="Type your email"/>
            </div>
            <div className= "form-group">
-               <input onChange={handleChange('password')}type="password" className="form-control" placeholder="Type your password"/>
+               <input value={password}onChange={handleChange('password')}type="password" className="form-control" placeholder="Type your password"/>
            </div>
            <div className= "form-group">
               <button className= "btn btn-outline-warning">{buttonText}</button>
            </div>
-       </form>;
+       </form>);
 
        return(
            <layout>
@@ -45,6 +46,8 @@ const Register = () => {
                    <h1>Register</h1>
                    <br/>
                    {registerform()}
+                   <hr/>
+                   {JSON.stringify(atate)}
                </div>
            </layout>
        )
