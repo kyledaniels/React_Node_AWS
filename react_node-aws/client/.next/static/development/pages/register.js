@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress/nprogress.css */ "./node_modules/nprogress/nprogress.css");
 /* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5__);
 var _this = undefined,
-    _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/components/layout.js";
+    _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/client/components/layout.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -825,10 +825,10 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fpages%2Fregister.js!./":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fpages%2Fregister.js ***!
-  \**************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fclient%2Fpages%2Fregister.js!./":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fclient%2Fpages%2Fregister.js ***!
+  \***********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5458,7 +5458,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _this = undefined,
-    _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/pages/register.js";
+    _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/client/pages/register.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -5638,13 +5638,13 @@ var Register = function Register() {
 /***/ }),
 
 /***/ 3:
-/*!******************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fpages%2Fregister.js ***!
-  \******************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fclient%2Fpages%2Fregister.js ***!
+  \***************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fpages%2Fregister.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fpages%2Fregister.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fclient%2Fpages%2Fregister.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fregister&absolutePagePath=%2FUsers%2Fkyledaniels%2Fbootcamp%2FReact_Node_AWS%2Freact_node-aws%2Fclient%2Fpages%2Fregister.js!./");
 
 
 /***/ }),

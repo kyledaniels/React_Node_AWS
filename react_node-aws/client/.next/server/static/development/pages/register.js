@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress/nprogress.css */ "./node_modules/nprogress/nprogress.css");
 /* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/components/layout.js";
+var _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/client/components/layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1963,7 +1963,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-var _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/pages/register.js";
+var _jsxFileName = "/Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/client/pages/register.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2151,7 +2151,7 @@ const Register = () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/pages/register.js */"./pages/register.js");
+module.exports = __webpack_require__(/*! /Users/kyledaniels/bootcamp/React_Node_AWS/react_node-aws/client/pages/register.js */"./pages/register.js");
 
 
 /***/ }),
