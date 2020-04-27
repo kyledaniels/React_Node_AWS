@@ -18,11 +18,12 @@ const Register = () => {
        
        const handleChange = (name)=> (e)=>{
              setState({...state,[name]:e.target.value,error:'',success:'',buttonText:'Register'})
-       }
+       };
 
-       const handleSubmit = ()=>{
-
-       }
+       const handleSubmit = e =>{
+               e.preventDefault()
+               console.table({name,email,password});
+       };
 
        const registerform=()=>(
        <form onSubmit={handleSubmit}>
@@ -41,15 +42,15 @@ const Register = () => {
        </form>);
 
        return(
-           <layout>
+           <Layout>
                <div className="col-md-6 offset-md-3">
                    <h1>Register</h1>
                    <br/>
                    {registerform()}
                    <hr/>
-                   {JSON.stringify(atate)}
+                   {JSON.stringify(state)}
                </div>
-           </layout>
+           </Layout>
        )
 
 }
