@@ -37,4 +37,26 @@ const userSchema = new mongoose.Schema({
 
    );
 
-   
+   //virtual fields
+
+   userSchema.virtual('password')
+       .set(function(password){
+        //create temp variable called _password
+        this._password = password
+        // generate salt
+        this.salt = this.makeSalt()
+        // encrpt password
+        this.hashed_password = this.encryptPassword(password)
+       })
+
+       .get(function(){
+           return this._
+       })
+
+   //methods:authenticate, encryptPassword, makeSalt
+
+   userSchema.methods = {
+
+   }
+
+  // export user model
