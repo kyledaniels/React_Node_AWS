@@ -2,13 +2,10 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/register',(req,res)=>{
+// import from controllers
+const {register} = require('../controllers/auth');
 
-    
-    res.json({
-        data: 'you hit register endpoint middleware...'
-    });
-});
+router.get('/register', register);
 
 module.exports = router;
 

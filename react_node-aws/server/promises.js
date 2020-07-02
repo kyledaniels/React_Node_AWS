@@ -3,7 +3,7 @@ const handleSuccess = (resolvedValue)=>{
 }
 
 
-const hanleFailure  = (rejectReason)=>{
+const handleFailure  = (rejectReason)=>{
         console.log(rejectReason);
 }
 
