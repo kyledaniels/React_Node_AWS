@@ -58,6 +58,13 @@ const userSchema = new mongoose.Schema({
    //methods:authenticate, encryptPassword, makeSalt
 
    userSchema.methods = {
+
+          authenticate: function(plainText){
+                 
+                return this.encryptPassword(plainText) === this.hashed_password;
+          },
+
+
           encryptPassword:function(password){
               if(password) return ''
               try {
@@ -75,3 +82,5 @@ const userSchema = new mongoose.Schema({
    };
 
   // export user model
+
+  module.exports = mongoose.model()
