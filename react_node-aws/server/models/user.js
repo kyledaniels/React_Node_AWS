@@ -1,4 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+
+const crypto = require('crypto');
 
 const userSchema = new mongoose.Schema({
     username: {
@@ -56,7 +58,14 @@ const userSchema = new mongoose.Schema({
    //methods:authenticate, encryptPassword, makeSalt
 
    userSchema.methods = {
-
-   }
+          encryptPassword:function(password){
+              if(password) return ''
+              try {
+                  return crypto
+              } catch (err){
+                  return ''
+              }
+          }
+   };
 
   // export user model
