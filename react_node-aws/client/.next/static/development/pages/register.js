@@ -7511,7 +7511,15 @@ var Register = function Register() {
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault(); // console.table({name,email,password});
 
-    axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("http://localhost:8000/api/register");
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("http://localhost:8000/api/register", {
+      name: name,
+      email: email,
+      password: password
+    }).then(function (response) {
+      return console.log(response);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   };
 
   var registerform = function registerform() {
@@ -7520,50 +7528,10 @@ var Register = function Register() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 37,
         columnNumber: 8
       }
     }, __jsx("div", {
-      className: "form-group",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 12
-      }
-    }, __jsx("input", {
-      value: name,
-      onChange: handleChange('name'),
-      type: "text",
-      className: "form-control",
-      placeholder: "Type your name",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 16
-      }
-    })), __jsx("div", {
-      className: "form-group",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 12
-      }
-    }, __jsx("input", {
-      value: email,
-      onChange: handleChange('email'),
-      type: "email",
-      className: "form-control",
-      placeholder: "Type your email",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 16
-      }
-    })), __jsx("div", {
       className: "form-group",
       __self: _this,
       __source: {
@@ -7572,11 +7540,11 @@ var Register = function Register() {
         columnNumber: 12
       }
     }, __jsx("input", {
-      value: password,
-      onChange: handleChange('password'),
-      type: "password",
+      value: name,
+      onChange: handleChange('name'),
+      type: "text",
       className: "form-control",
-      placeholder: "Type your password",
+      placeholder: "Type your name",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -7591,12 +7559,52 @@ var Register = function Register() {
         lineNumber: 41,
         columnNumber: 12
       }
+    }, __jsx("input", {
+      value: email,
+      onChange: handleChange('email'),
+      type: "email",
+      className: "form-control",
+      placeholder: "Type your email",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 16
+      }
+    })), __jsx("div", {
+      className: "form-group",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 12
+      }
+    }, __jsx("input", {
+      value: password,
+      onChange: handleChange('password'),
+      type: "password",
+      className: "form-control",
+      placeholder: "Type your password",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 16
+      }
+    })), __jsx("div", {
+      className: "form-group",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 12
+      }
     }, __jsx("button", {
       className: "btn btn-outline-warning",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 48,
         columnNumber: 15
       }
     }, buttonText)));
@@ -7606,7 +7614,7 @@ var Register = function Register() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 53,
       columnNumber: 12
     }
   }, __jsx("div", {
@@ -7614,28 +7622,28 @@ var Register = function Register() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 54,
       columnNumber: 16
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 55,
       columnNumber: 20
     }
   }, "Register"), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 56,
       columnNumber: 20
     }
   }), registerform(), __jsx("hr", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 58,
       columnNumber: 20
     }
   }), JSON.stringify(state)));

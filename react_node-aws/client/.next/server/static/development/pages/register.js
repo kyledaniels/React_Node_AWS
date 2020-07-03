@@ -2012,7 +2012,11 @@ const Register = () => {
   const handleSubmit = e => {
     e.preventDefault(); // console.table({name,email,password});
 
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`http://localhost:8000/api/register`);
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`http://localhost:8000/api/register`, {
+      name,
+      email,
+      password
+    }).then(response => console.log(response)).catch(error => console.log(error));
   };
 
   const registerform = () => __jsx("form", {
@@ -2020,50 +2024,10 @@ const Register = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 37,
       columnNumber: 8
     }
   }, __jsx("div", {
-    className: "form-group",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 12
-    }
-  }, __jsx("input", {
-    value: name,
-    onChange: handleChange('name'),
-    type: "text",
-    className: "form-control",
-    placeholder: "Type your name",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 16
-    }
-  })), __jsx("div", {
-    className: "form-group",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 12
-    }
-  }, __jsx("input", {
-    value: email,
-    onChange: handleChange('email'),
-    type: "email",
-    className: "form-control",
-    placeholder: "Type your email",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 16
-    }
-  })), __jsx("div", {
     className: "form-group",
     __self: undefined,
     __source: {
@@ -2072,11 +2036,11 @@ const Register = () => {
       columnNumber: 12
     }
   }, __jsx("input", {
-    value: password,
-    onChange: handleChange('password'),
-    type: "password",
+    value: name,
+    onChange: handleChange('name'),
+    type: "text",
     className: "form-control",
-    placeholder: "Type your password",
+    placeholder: "Type your name",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -2091,12 +2055,52 @@ const Register = () => {
       lineNumber: 41,
       columnNumber: 12
     }
+  }, __jsx("input", {
+    value: email,
+    onChange: handleChange('email'),
+    type: "email",
+    className: "form-control",
+    placeholder: "Type your email",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 16
+    }
+  })), __jsx("div", {
+    className: "form-group",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 12
+    }
+  }, __jsx("input", {
+    value: password,
+    onChange: handleChange('password'),
+    type: "password",
+    className: "form-control",
+    placeholder: "Type your password",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 16
+    }
+  })), __jsx("div", {
+    className: "form-group",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 12
+    }
   }, __jsx("button", {
     className: "btn btn-outline-warning",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 48,
       columnNumber: 15
     }
   }, buttonText)));
@@ -2105,7 +2109,7 @@ const Register = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 53,
       columnNumber: 12
     }
   }, __jsx("div", {
@@ -2113,28 +2117,28 @@ const Register = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 54,
       columnNumber: 16
     }
   }, __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 55,
       columnNumber: 20
     }
   }, "Register"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 56,
       columnNumber: 20
     }
   }), registerform(), __jsx("hr", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 58,
       columnNumber: 20
     }
   }), JSON.stringify(state)));
